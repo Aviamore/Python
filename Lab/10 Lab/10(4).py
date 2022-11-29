@@ -1,10 +1,9 @@
-c = list(map(int, input().split()))
-B = set('')
-for i in range(len(c)):
-    y = len(c)
-    B.add(c[i])
-
-    if y == len(B):
-        print("YES")
+a = [int(s) for s in input().split()]
+b = list(set(a))
+for i in range (len(a)):
+    if (a[i] == b[i]):
+        print ("NO")
     else:
-        print("NO")
+        print ("YES")
+print (a)
+print (b)
