@@ -6,3 +6,6 @@ else:
     for i in range (len(a)):
         if (b == a[i]):
             print ("YES")
+        else:
+            print ("NO")
+            break
