@@ -1,3 +1,3 @@
-def lab10_3():
+def 3():
     print(sorted(set(input().split()).intersection(set(input().split()))))
-print (lab10_3())
+print (3())
