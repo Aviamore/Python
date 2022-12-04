@@ -1,0 +1,13 @@
+from collections import defaultdict
+
+N = int(input())
+d = defaultdict(list)
+for i in range(N):
+    lat = [str(j) for j in input().replace(',', '').split()]
+    eng = lat[0]
+    lat.remove('-')
+    for word in lat[1:]:
+        d[word].append(eng)
+print(len(d))
+for i in sorted(d.keys()):
+    print(i, '-', *(d[i]))
