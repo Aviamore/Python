@@ -1,0 +1,8 @@
+def lab11_2():
+    amount_of_pairs = int(input('Количество пар: '))
+    dict = {}
+    for pair_index in range(amount_of_pairs):
+        first, second = input().split()
+        dict[first] = second
+        dict[second] = first
+    print(dict[input()])
