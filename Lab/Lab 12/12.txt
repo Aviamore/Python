@@ -1,0 +1,29 @@
+correct = []
+uncorrect = []
+def check_word(word):
+    for i in range(len(word) - 2):
+        if word[i + 1] == 'e' and word[i + 2] == 'i':
+            if word[i] == 'c':
+                correct.append(word)
+            else:
+                uncorrect.append(word)
+        elif word[i+1] == 'i' and word[i + 2] == 'e':
+            if word[i] != 'c':
+                correct.append(word)
+            else:
+                uncorrect.append(word)
+
+
+def ex12():
+    file = open('words12.txt', 'r')
+    text = []
+    with file as f:
+        for line in f:
+            if (line!=''):
+                text = line.split()
+                for word in text:
+                    if len(word) >= 3:
+                        check_word(word)
+
+    print("Правилу соответсвует", len(correct), ' слов : ', correct)
+    print("Правилу не соответсвует", len(uncorrect), ' слов : ', uncorrect)
