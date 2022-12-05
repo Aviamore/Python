@@ -1,0 +1,13 @@
+def num_sum():
+    x = input('Enter the number \n')
+    ssum = 0
+    while x:
+        try:
+            x = float(x)
+        except ValueError:
+            print("Not number! Enter again")
+            x = input()
+            continue
+        ssum += float(x)
+        x = input('Enter the number \n')
+    print(ssum)
