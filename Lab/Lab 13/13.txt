@@ -17,52 +17,52 @@
 # • вызовите eat() и makeNoise() для животного.
 import math
 
-# class Animal():
-#     name = ''
-#
-#     def __init__(self, newName):
-#         self.name = newName
-#         print('Родилось животное ', self.name)
-#
-#     def setName(self, newName):
-#         self.name = newName
-#
-#     def getName(self):
-#         return (self.name)
-#
-#
-#     def eat(self):
-#         print(self.name, 'кушает')
-#
-#     def makeNoise(self):
-#         print(self.name,' говорит:  хочу кушать')
-#
-# class Cat():
-#     name = ''
-#     color = ''
-#     weigth = ''
-#
-#     def __init__(self, newName):
-#         self.name = newName
-#         print('Родилось животное ', self.name)
-#
-#     def meow(self):
-#         print(self.name, 'мявкает')
-#
-# def setCatandAni():
-#     cat_1 = Cat(input('Введите имя животного: '))
-#     cat_1.name = input('Имя кота: ')
-#     cat_1.color = input('Цвет кота: ')
-#     cat_1.weigth = input('Вес кота: ')
-#
-#     cat_1.meow()
-#
-#     newAni = Animal(input('Введите имя животного: '))
-#     newAni.makeNoise()
-#     newAni.eat()
-#     newAni.setName(input('Введите новое имя животного: '))
-#     print(newAni.getName())
-#
+class Animal():
+     name = ''
+
+     def __init__(self, newName):
+        self.name = newName
+        print('Родилось животное ', self.name)
+
+     def setName(self, newName):
+         self.name = newName
+
+     def getName(self):
+         return (self.name)
+
+
+     def eat(self):
+         print(self.name, 'кушает')
+
+     def makeNoise(self):
+         print(self.name,'чирикает ')
+
+class Cat():
+    name = ''
+    color = ''
+    weigth = ''
+
+    def __init__(self, newName):
+        self.name = newName
+        print('Родилось животное ', self.name)
+
+    def meow(self):
+        print(self.name, 'мявкает')
+
+def setCatandAni():
+  cat_1 = Cat(input('Введите имя животного: '))
+  cat_1.name = input('Имя кота: ')
+  cat_1.color = input('Цвет кота: ')
+  cat_1.weigth = input('Вес кота: ')
+
+  cat_1.meow()
+
+  newAni = Animal(input('Введите имя животного: '))
+  newAni.makeNoise()
+  newAni.eat()
+  newAni.setName(input('Введите новое имя животного: '))
+  print(newAni.getName())
+
 
 
 # Задание 3 Создайте класс StringVar для работы со строковым типом
@@ -152,7 +152,7 @@ class Animal():
         print(self.name, 'кушает')
 
     def makeNoise(self):
-        print(self.name, ' говорит:  хочу кушать')
+        print(self.name, 'чирикает ')
 
 
 class Cat(Animal):
@@ -185,7 +185,7 @@ def newAnimals():
     kitten = Cat('Мурзик')
     kitten2 = Cat('Новый Мурзик')
     dog = Dog('Собака')
-    rat = Animal('Коврик')
+    rat = Animal('Воробей')
 
     print('\n')
 
@@ -201,7 +201,7 @@ def newAnimals():
     dog.eat()
     rat.eat()
 
-newAnimals()
-# setCatandAni()
-# ex3()
-# points()
+# newAnimals()
+#setCatandAni()
+#ex3()
+#points()
